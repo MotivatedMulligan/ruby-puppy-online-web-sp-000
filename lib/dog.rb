@@ -4,10 +4,10 @@ class Dog
 
 @@all = []
 
-def initialize(name)
+def initialize(name, save)
   @name = name
   @@all << self
-  save 
+          save
 end
 
 def self.all
@@ -19,7 +19,7 @@ def self.clear_all
 end
 
 def self.print_all
-@@all.display
+@@all.to_stdout
 end
 
 end
