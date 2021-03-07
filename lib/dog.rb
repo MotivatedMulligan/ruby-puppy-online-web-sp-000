@@ -6,8 +6,8 @@ class Dog
 
 def initialize(name)
   @name = name
-  @@all << dog
-    dog = self.new
+  @@all << self
+
 end
 
 def self.all
@@ -19,7 +19,7 @@ def self.clear_all
 end
 
 def self.print_all
-   puts "@@all == #{@@all || 'nil'}"
+# puts "@@all == #{@@all || 'nil'}"
 #puts @@all.instance_variables
 end
 
