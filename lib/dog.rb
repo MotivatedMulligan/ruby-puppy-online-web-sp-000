@@ -5,10 +5,7 @@ class Dog
 @@all = []
 
 def initialize(name)
-#  @name= name
-dog = self.new
-dog.name = name
-dog.save
+   @name= name
   @@all << self
 
 end
