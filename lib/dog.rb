@@ -19,8 +19,7 @@ def self.clear_all
 end
 
 def self.print_all
-# puts "@@all == #{@@all || 'nil'}"
-#puts @@all.instance_variables
+@@all.string
 end
 
 end
