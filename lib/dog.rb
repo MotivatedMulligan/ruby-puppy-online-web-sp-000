@@ -15,11 +15,11 @@ def self.all
 end
 
 def self.clear_all
-  @@all.display
+  @@all.clear
 end
 
 def self.print_all
-puts
+@@all.display
 end
 
 end
