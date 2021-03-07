@@ -1,12 +1,13 @@
 # Add your code here
 class Dog
-  attr_accessor :name
+  attr_accessor :name, :save
 
 @@all = []
 
-def initialize(name)
+def initialize(name, save)
   @name = name
-  @@all << self
+  @@all << @name
+  
 end
 
 def self.all
@@ -18,7 +19,7 @@ def self.clear_all
 end
 
 def self.print_all
-@@all.print
+puts @@all.each
 end
 
 end
