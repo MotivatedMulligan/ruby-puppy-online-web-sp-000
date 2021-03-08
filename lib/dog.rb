@@ -1,10 +1,10 @@
 # Add your code here
 class Dog
 
-  attr_accessor :name, :save
+  attr_accessor :name
 @@all = []
 
-def self.new(name)
+def instance(name)
    @name = name
   @@all << self
 save
