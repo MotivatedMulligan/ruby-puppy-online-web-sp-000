@@ -1,7 +1,6 @@
 # Add your code here
 class Dog
   attr_accessor :name, :save
-
 @@all = []
 
 def initialize(name)
@@ -19,7 +18,7 @@ def self.clear_all
 end
 
 def self.print_all
-@@all.collect { |dog| dog.name}
+puts @@all.collect { |dog| dog.name }
 end
 
 end
