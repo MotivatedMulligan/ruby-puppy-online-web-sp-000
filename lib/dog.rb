@@ -7,7 +7,7 @@ class Dog
 def initialize(name)
    @name = name
   @@all << self
-
+save
 end
 
 def self.all
@@ -19,7 +19,7 @@ def self.clear_all
 end
 
 def self.print_all
-@@all.inspect
+@@all.collect { |dog| dog.name}
 end
 
 end
